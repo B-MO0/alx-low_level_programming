@@ -6,10 +6,15 @@
 */
 int main(void)
 {
-char ch;
-for (ch = 'z'; ch >= 'a'; ch--)
+int n;
+for (n = 48; n < 58; n++)
 {
-putchar(ch);
+putchar(n);
+if (n != 57)
+{
+putchar(',');
+putchar(' ');
+}
 }
 putchar('\n');
 return (0);
