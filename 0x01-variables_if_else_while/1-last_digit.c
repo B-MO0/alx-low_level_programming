@@ -1,10 +1,10 @@
 #include<stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
-* main - task1
+/**
+* main - print the last digit of the number stored in the variable.
 *
-* Return: Always 0 (Success)
+* Return: Always 0 (Success).
 */
 int main(void)
 {
