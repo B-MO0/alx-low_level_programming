@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /*
-* main- task1
+* main - task1
 *
 * Return: Always 0 (Success)
 */
