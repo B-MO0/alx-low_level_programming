@@ -5,7 +5,6 @@
  * @s:string
  * Return: reversed String
  */
-
 void rev_string(char *s)
 {
 char rev = s[0];
