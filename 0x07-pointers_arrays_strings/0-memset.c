@@ -1,13 +1,15 @@
 include "main.h"
 /**
- *_memset- main proto
- *
- *return: s
+*_memset- main proto
+*@n:Function parap
+*@s:Function param
+*@b:memory value
+*return: s
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-int = a
-  for (a = 0; a < n; a++)
-    s[a] = b;
+int = a;
+for (a = 0; a < n; a++)
+s[a] = b;
 return (s);
 }
