@@ -29,3 +29,5 @@ done
 o_files=(*.o)
 
 ar rc liball.a "${o_files[@]}"
+
+
