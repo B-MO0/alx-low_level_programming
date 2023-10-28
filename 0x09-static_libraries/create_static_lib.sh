@@ -1,3 +1,4 @@
+#!/bin/bash
 source_files=(
     "0-isupper.c"
     "0-strcat.c"
