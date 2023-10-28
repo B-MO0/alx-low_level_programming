@@ -28,6 +28,6 @@ done
 
 o_files=(*.o)
 
-ar rcs liball.a "${o_files[@]}"
+ar rc liball.a "${o_files[@]}"
 
 
