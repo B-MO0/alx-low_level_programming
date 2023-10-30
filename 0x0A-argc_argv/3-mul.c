@@ -5,7 +5,7 @@
 *@argv: list
 *return : always 0, 1 if error
 */
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 int mul;
 if (argc == 3)
