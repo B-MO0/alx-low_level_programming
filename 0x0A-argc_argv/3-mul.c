@@ -4,7 +4,7 @@
 *main - multipy 2 nums
 *@argc: int
 *@argv: list
-*return : always 0
+*Return : always 0
 */
 int main(int argc, char *argv[])
 {
