@@ -1,7 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
 /**
-*main - multipy 2 nums
+*main - multipy two nums
 *@argc: int
 *@argv: list
 *Return: 0 for success, 1 for error
