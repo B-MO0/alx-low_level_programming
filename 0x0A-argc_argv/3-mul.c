@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlin.h>
+#include <stdlib.h>
 /**
 *main - multipy 2 nums
 *@argc: int
