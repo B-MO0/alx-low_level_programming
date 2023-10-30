@@ -3,20 +3,20 @@
 *main - multipy 2 nums
 *@argc: int
 *@argv: list
-*return : always 0, 1 if error
+*return : always 0
 */
 int main(int argc, char *argv[])
 {
-int mul;
+int mult;
 if (argc == 3)
 {
-mul = atoi(argv[1]) * atoi(argv[2]);
-printf("%d\n", mul);
+mult = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", mult);
 }
 else
 {
 printf("ERROR\n");
 return (1);
 }
-return(0);
+return (0);
 }
