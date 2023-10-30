@@ -1,9 +1,10 @@
+#include<stdio.h>
 #include <stdlib.h>
 /**
-*main - multipy two nummbers
-*@argc: int
-*@argv: list
-*Return: 0 for success, 1 for error
+*main-multipy 2 nums.
+*@argc: int.
+*@argv: list.
+*Return: 0 for success, 1 for error.
 */
 int main(int argc, char *argv[])
 {
