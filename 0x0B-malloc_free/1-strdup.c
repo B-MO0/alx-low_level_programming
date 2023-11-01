@@ -12,7 +12,7 @@ if (str == NULL)
 return (NULL);
 for (; str[size] != '\0'; size++)
 ;
-m = malloc(size * sizeof(*stf) + 1);
+m = malloc(size * sizeof(*str) + 1);
 if (m == 0)
 return (NULL);
 else
