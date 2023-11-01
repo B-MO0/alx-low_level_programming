@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 int sum = 0;
 char *c;
-while (--argc)
+while (argc)
 {
 for (c = argv[argc]; *c; c++)
 if (*c < '0' || *c >'9')
