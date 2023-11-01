@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
 *main - adds up the values in the list
 *@argc: number of arguments
