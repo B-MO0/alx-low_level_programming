@@ -62,7 +62,10 @@ if (tmp == NULL)
 return (NULL);
 
 while (start < end)
-*tmp++ = str[start++;
+{
+*tmp++ = str[start];
+start++;
+}
 
 *tmp = '\0';
 matrix[k] = tmp - c;
