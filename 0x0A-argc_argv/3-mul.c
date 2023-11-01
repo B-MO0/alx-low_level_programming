@@ -16,7 +16,7 @@ printf("%d\n", mult);
 }
 else
 {
-printf("ERROR\n");
+printf("Error\n");
 return (1);
 }
 return (0);
