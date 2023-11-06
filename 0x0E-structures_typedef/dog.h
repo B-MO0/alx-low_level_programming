@@ -8,7 +8,8 @@
 *
 *Description: dog's info
 */
-struct dog {
+struct dog
+{
 char *name;
 float age;
 char *owner;
