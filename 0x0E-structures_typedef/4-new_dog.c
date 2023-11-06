@@ -9,7 +9,7 @@
 */
 int _strlen(const char *str)
 {
-int lenghth = 0
+int length = 0;
 while (*str++)
 length++;
 return (length);
@@ -50,7 +50,7 @@ if ((*dog).name == NULL)
 free(dog);
 return (NULL);
 }
-dog->owner = malloc(sizeof(char) * (strlen(owner) + 1));
+dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
 if ((*dog).owner == NULL)
 {
 free(dog->name);
