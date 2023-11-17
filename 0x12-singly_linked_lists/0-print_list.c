@@ -15,8 +15,11 @@ i++;
 return (i);
 }
 /**
- *
- */
+*print_list - print nodes of lik list
+*@h: pointer
+*
+*Return: size of list
+*/
 size_t print_list(const list_t *h)
 {
 size_t i = 0;
