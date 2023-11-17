@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 /**
 *_strlen - returns length of string
 *@s: just a string
