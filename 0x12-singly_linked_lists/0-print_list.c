@@ -1,33 +1,29 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
+
 /**
-*_strlen - returns length of string
-*@s: just a string
-*
-*Return: string length
-*/
-int _strlen(char *s)
-{
-int i = 0;
-if (!s)
-return (0);
-while (*s++)
-i++;
-return (i);
-}
-/**
-*print_list - print nodes of lik list
+*print_list - prints the nodes of list.
 *@h: pointer
-*
-*Return: size of list
+*Return: number of nodes.
 */
 size_t print_list(const list_t *h)
 {
-size_t i = 0;
+int count = 0;
+
 while (h)
 {
-printf("[%d] %s\n", _strlen(h->str), h->str ? h->str : "(nil)");
-h = h->next;
-i++;
+if (h->str == NULL)
+{
+printf("[0] (nil)\n");
 }
-return (i);
+else
+{
+printf("[%d] %s\n", h->len, h->str);
+}
+count++;
+h = h->next;
+}
+return (count);
 }
