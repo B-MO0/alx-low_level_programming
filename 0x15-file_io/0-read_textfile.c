@@ -2,36 +2,36 @@
 #include <stdlib.h>
 
 /**
-* readAndPrintFile - Reads a text file and outputs its content to POSIX stdout.
-* @file_name: pointer
-* @num_letters: The number of letters
+* read_textfile - Reads a text file and prints it to POSIX stdout.
+* @filename: pointer
+* @letters: The number of letters 
 *
 * Return: always 0
 */
-ssize_t readAndPrintFile(const char *file_name, size_t num_letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t file_descriptor, bytes_read, bytes_written;
-char *file_content_buffer;
+ssize_t o, r, w;
+char *buffer;
 
-if (file_name == NULL)
+if (filename == NULL)
 return (0);
 
-file_content_buffer = malloc(sizeof(char) * num_letters);
-if (file_content_buffer == NULL)
+buffer = malloc(sizeof(char) * letters);
+if (buffer == NULL)
 return (0);
 
-file_descriptor = open(file_name, O_RDONLY);
-bytes_read = read(file_descriptor, file_content_buffer, num_letters);
-bytes_written = write(STDOUT_FILENO, file_content_buffer, bytes_read);
+o = open(filename, O_RDONLY);
+r = read(o, buffer, letters);
+w = write(STDOUT_FILENO, buffer, r);
 
-if (file_descriptor == -1 || bytes_read == -1 || bytes_written == -1 || bytes_written != bytes_read)
+if (o == -1 || r == -1 || w == -1 || w != r)
 {
-free(file_content_buffer);
+free(buffer);
 return (0);
 }
 
-free(file_content_buffer);
-close(file_descriptor);
+free(buffer);
+close(o);
 
-return (bytes_written);
+return (w);
 }
