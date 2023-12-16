@@ -1,27 +1,16 @@
 #include "main.h"
 /**
-* binary_to_uint - converts a binary number to an unsigned int.
-* @b: pointer
+* get_endianness - checks the endianness
 *
-* Return: converted number, null
+* Return: 0 if big endian, 1 if little endian
 */
-unsigned int binary_to_uint(const char *b)
+int get_endianness(void)
 {
 int i;
-unsigned int j;
-j = 0;
-if (!b)
-return (0);
-for (i = 0; b[i] != '\0'; i++)
-{
-if (b[i] != '0' && b[i] != '1')
-return (0);
-}
-for (i = 0; b[i] != '\0'; i++)
-{
-j <<= 1;
-if (b[i] == '1')
-j += 1;
-}
-return (j);
+char *c;
+
+i = 1;
+c = (char *)&i;
+
+return (*c);
 }
